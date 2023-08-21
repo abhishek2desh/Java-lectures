@@ -9,15 +9,15 @@ enum payment{
 public class BankMain {
     public static void main(String[] args) throws InsufficientBalanceException, AgeException, NameException {
         Bank bank = new Bank();
-        //double deposit = bank.deposit(1000);
+        double deposit = bank.deposit(1000);
 
-        //System.out.println("Deposit amount is "+ deposit);
+        System.out.println("Deposit amount is "+ deposit);
 
-        //double withdraw = bank.withdraw(2000);
+        double withdraw = bank.withdraw(2000);
 
-        //System.out.println("Balance withdraw amount is "+ withdraw);
+        System.out.println("Balance withdraw amount is "+ withdraw);
 
-        //System.out.println("Enter the age of the customer");
+        System.out.println("Enter the age of the customer");
         bank.setAge();
         bank.setName();
         payment myVar = payment.Debit;
